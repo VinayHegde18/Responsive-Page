@@ -1,0 +1,252 @@
+body {
+    background-color: #e0ffff;
+  }
+  .grid-left {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 10px;
+  
+    width: 20%;
+    float: left;
+    margin-left: 50px;
+    padding: 0%;
+  }
+  #left-header {
+    width: 25px;
+  }
+  ul {
+    list-style-type: none;
+    padding-left: 0%;
+  }
+  a {
+    text-decoration: none;
+    color: cadetblue;
+  }
+  li {
+    margin-top: 30px;
+  }
+  button {
+    background-color: tomato;
+    color: white;
+    padding-left: 10px;
+    border-radius: 50px;
+    width: 130px;
+    height: 50px;
+    margin-left: 0px;
+    font-size: 20px;
+    margin-top: 25px;
+    cursor: pointer;
+    text-align: center;
+  }
+  button:hover {
+    background-color: lightyellow;
+    color: black;
+    transition-delay: 0.5s;
+    transition: ease;
+  }
+  button h6 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .grid-right-2 {
+    width: 60%;
+    float: left;
+  }
+  #text {
+    font-size: 50px;
+    font-family: "Times New Roman", Times, serif;
+    float: left;
+    text-align: left;
+  }
+  hr {
+    color: red;
+    margin-left: 20px;
+  }
+  .grid-right-3 {
+    width: 30%;
+    float: left;
+    margin-top: 25px;
+    padding-left: 10px;
+    color: cadetblue;
+  }
+  .grid-right {
+    width: 70%;
+    float: left;
+    text-align: center;
+    margin-top: 50px;
+  }
+  #para {
+    margin-left: 20px;
+    text-align: justify;
+  }
+  .grid-right-bottom {
+    width: 70%;
+    float: left;
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+  #cuisine-list li {
+    display: inline-block;
+    margin-left: 0px;
+    margin-right: 20px;
+  }
+  #list-1,
+  #list-2,
+  #list-3,
+  #list-4 {
+    background-color: #fff;
+    width: 150px;
+    height: 200px;
+    box-shadow: 10px 10px 30px #00ffff;
+    border-radius: 20px;
+    color: black;
+  }
+  #cart-icon{
+      display: none;
+  }
+  img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 20px;
+  }
+  .hamburg {
+    width: 100%;
+    top: 0;
+    cursor:pointer;
+  }
+  
+  .hamburg label,
+  #hamburger {
+    display: none;
+  }
+  @media screen and (max-width: 700px) {
+    button {
+      width: 50px;
+      height: 50px;
+      background-repeat: no-repeat;
+      border: none;
+      background-color: inherit;
+    }
+    button h6 {
+      display: none;
+    }
+       #cart-icon{
+          display: inline;
+          font-size: 30px;
+      }
+    #text {
+      font-size: 30px;
+    }
+    .grid-container {
+      width: 100%;
+      height: 100%;
+    }
+    .left-header {
+      font-size: 10px;
+      width: 50%;
+      margin-left: 5vw;
+      text-align: justify;
+    }
+    .hamburg label {
+      display: inline-block;
+      color: red;
+      font-style: normal;
+      font-size: 50px;
+      padding: 10px;
+      cursor:pointer;
+    }
+    #nav-items li {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+    }
+    #nav-items a {
+      text-decoration: none;
+      color: cadetblue;
+    }
+    #nav-items {
+      display: none;
+    }
+    .hamburg input:checked ~ #nav-items {
+      display: block;
+    }
+    .hamburg {
+      float: left;
+    }
+    .grid-left {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      margin: 0;
+      padding: 0;
+    }
+    .parent {
+      display: flex;
+      flex-direction: row-reverse;
+      padding-left: 5vw;
+      left: 0%;
+      margin: 0%;
+    }
+    .hamburger,
+    .left-header {
+      margin-right: 50px;
+    }
+    .cart {
+      position: absolute;
+      top: 0;
+      right: 10px;
+      width: 20%;
+    }
+    .grid-right-3 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 75%;
+      padding-top: 20vh;
+      margin-top: 10vh;
+    }
+    .grid-right-2 {
+      margin-left: auto;
+      margin-right: auto;
+      width: auto;
+      margin-top: 2vh;
+    }
+  
+    .grid-right-bottom {
+      position: relative;
+      top: 0;
+      left: 0;
+      margin-left: 5vw;
+    }
+    #cuisine-list {
+      padding: 0;
+      margin-left: 5vw;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      height: 50vh;
+      width: 90%;
+    }
+    #list-1,
+    #list-2,
+    #list-3,
+    #list-4,
+    #list-5 {
+      display: inline-block;
+      margin: 0 5vw;
+      padding-bottom: 1vh;
+      width: 35vw;
+      height: 22vh;
+      font-size: 3vw;
+      font-weight: bold;
+    }
+    img {
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      margin-top: 20px;
+    }
+  }
+  
